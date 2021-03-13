@@ -1,40 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="text.js"></script>
+
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PawPals</title>
+    <link rel="stylesheet" href="/mystyle.css">
+    <script src="text.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <title>LifeApp</title>
 </head>
-<nav>
-    <div>
-        <img src="/ImageFolder/male1085867452484.jpg" alt="#">
-    </div>
-    <div>
-        <Ul>
-            <li><a href="#section1">Home</a></li>
-            <li><a href="#section2">About</a></li>
-            <li><a href="#section3">Services</a></li>
-            <li><a href="#section4">Contact</a></li>
-        </Ul>
-    </div>
+
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-dark absolute-top">
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+    </ul>
+
+    <a class="navbar-brand" href="#">MyLife</a>
+
+    <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+    </form>
 </nav>
 
 
 <body>
-    <div>
-        <button>Left</button>
+
+    <div class="jumbotron jumbotron-fluid" id="top-page">
+        <h1>My Life</h1>
+        <p>Bootstrap is the most popular HTML, CSS...</p>
+      </div>
+
+    <div class="row">
+        <div class="card col-4" style="width:400px">
+            <img class="card-img-top" src="/ImageFolder/jj-ying-9Qwbfa_RM94-unsplash.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <div class="card col-4" style="width:400px">
+            <img class="card-img-top" src="/ImageFolder/ssp066.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <div class="card col-4" style="width:400px">
+            <img class="card-img-top" src="/ImageFolder/male1085867452484.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
     </div>
-    <div>
-        
-    </div>
-    <div>
-        <button>right</button>
-    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <h1>Services</h1>
+        <p>Bootstrap is the most popular HTML, CSS...</p>
+      </div>
     
-    
+      <div class="row">
+        <div class="card col-3" style="width:400px">
+            <img class="card-img-top" src="/ImageFolder/male1085867452484.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <div class="card col-3" style="width:400px">
+            <img class="card-img-top" src="/ImageFolder/male1085867452484.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <div class="card col-3" style="width:400px">
+            <img class="card-img-top" src="/ImageFolder/male1085867452484.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <div class="card col-3" style="width:400px">
+            <img class="card-img-top" src="/ImageFolder/male1085867452484.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <h1>Contact</h1>
+        <p>Bootstrap is the most popular HTML, CSS...</p>
+      </div>
+
+
 </body>
 
 </html>
